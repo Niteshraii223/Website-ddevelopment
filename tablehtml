@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Food</title>
+    </head>
+    <body>
+        <table border="5" bgcolor="green">
+            <tr>
+                <th bgcolor="blue" border="10">food </th>
+                <th> home </th>
+                <th> outside </th>
+            </tr>
+            <tr>
+                <th> MOMO </th>
+                <th> Chowmein </th>
+                <th> VAAT </th>
+            </tr>
+            <tr>
+                <th> DAAL </th>
+                <th> SAAG </th>
+                <th> MASU </th>
+            </tr>
+            <tr>
+                <th> NUUN </th>
+                <th> ANDA </th>
+                <th> Curry </th>>
+            </tr>
+            <tr>
+                <th> CHICKEN </th>
+                <th> NOODLES </th>
+                <th> PANEER </th>
+            </tr>
+        </table>
+    </body>
+</html>
+
+
+    
