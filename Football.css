@@ -39,3 +39,21 @@ ul li:hover {
 ul li:nth-child(3) {
     background-color: blanchedalmond;
 }
+/* :not(selector)  Pseudo-class */
+p:not(:first-of-type) {
+    text-decoration: solid;
+}
+/* ::before Pseudo-element */
+ul li::before {
+    content: normal;
+}
+/* ::after Pseudo-element */
+a::after {
+    content: normal;
+}
+
+/* ::first-letter Pseudo-element*/
+p::first-letter {
+    font-size:200%;
+    color: blanchedalmond;
+}
