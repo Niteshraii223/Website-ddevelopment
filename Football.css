@@ -1,17 +1,17 @@
 body {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: aquamarine;
-    color: rgb(114, 35, 35);
+    background-color: rgb(105, 225, 185);
+    color: orange;
 }
 
 h1 {
-    color: blue;
+    color: green;
 }
 
 /* Attribute selector*/
 a {
-    color: yellow;
+    color: rgb(138, 28, 107);
     text-decoration: underline;
 }
 
@@ -26,17 +26,16 @@ ul>li {
 }
 
 /* Siblings selector */
-p+h2 {
+p + h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/* ;hover Pseudo-element */
-ul>li: hover {
-    col
-
-/* :nth-child(n) Pseudo-class */
-ul li: :nth-child(3) {
-    background-colour
+/* :hover Pseudo-class */
+ul li:hover {
+    color: brown;
 }
 
-/* 
+/* nth-child(n) Pseudo-class */
+ul li:nth-child(3) {
+    background-color: blanchedalmond;
+}
