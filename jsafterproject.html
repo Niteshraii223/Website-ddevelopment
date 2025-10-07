@@ -1,0 +1,50 @@
+<html>
+
+<head>
+
+</head>
+<style>
+    body {
+        background-color: rgb(19, 88, 145);
+
+    }
+
+    h2 {
+        text-align: center;
+        border: 6px;
+        
+    }
+
+    p {
+        color: rgb(76, 110, 26);
+    }
+</style>
+
+<body>
+    <h2> Javascript class</h2>
+    <p> Identity</p>
+    <p id="studenta"></p>
+    <p id="studentb"></p>
+    <script>
+        // Creating a class
+        class student {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+            //Creating age method for class student
+            age() {
+                let date = new Date();
+                return date.getFullYear() - this.year;
+            }
+        }
+        //Use student class with objects
+        studenta = new student("RAI.", 2011);
+        document.getElementById("studenta").innerHTML = "My name is " + studenta.name + "I was born in " + studenta.year + "And my age is " + studenta.age();
+        studentb = new student("Alok.", 2012);
+        document.getElementById("studentb").innerHTML = "I am " + studentb.name + " I was born in " + studentb.year + "And my age is " + studentb.age();
+
+    </script>
+</body>
+
+</html>
