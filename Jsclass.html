@@ -1,0 +1,45 @@
+<html>
+    <head>
+
+    </head>
+    <style>
+        body{
+            background-color: rgb(56, 190, 190);
+
+        }
+        h2{
+            text-align: top-center;
+            border: 6px;
+            padding: 3cm;
+        }
+        p{
+            color: rgb(170, 29, 172);
+        }
+    </style>
+    <body>
+        <h2> Javascript class</h2>
+        <p> How to use a javascript class</p>
+        <p id="student1"></p>
+        <p id="student2"></p>
+        <script>
+            // Creating a class
+            class student {
+                constructor(name,year) {
+                    this.name=name;
+                    this.year=year;
+                }
+                //Creating age method for class student
+                age() {
+                    let date = new Date ();
+                    return date.getFullYear() - this.year;
+                }
+            }
+            //Use student class with objects
+            student1 = new student ("Nitesh.",2011);
+            document.getElementById("student1").innerHTML= "My name is " + student1.name + "I was born in " + student1.year + "And my age is " + student1.age() ;
+            student2 = new student ("Alucard.", 2013);
+            document.getElementById("student2").innerHTML= "I am "+ student2.name + " I was born in " + student2.year + "And my age is " + student2.age();
+
+        </script>
+    </body>
+</html>
