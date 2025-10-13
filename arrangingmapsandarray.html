@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <p> Multiplying by 10</p>
+        <p id="demo"></p>
+        <script>
+            var numbers = [ 4, 6, 8, 10];
+            function myfunction(num){
+                return num * 10 ;
+            }
+            var newarray = numbers.map(myfunction);
+            document.getElementById("demo").innerHTML = newarray ;
+            
+        </script>
+        <p>Click on array</p>
+        <button onclick="ascending()">Ascending</button>
+        <button onclick="desending()">Desending</button>
+        <P id="result"></P>
+        <script>
+            var points = [40, 60, 80, 100];
+            document.getElementById("result").innerHTML = points;
+            function ascending() {
+                points.sort(function (a, b) { return a - b });
+                document.getElementById("result").innerHTML = points;
+
+            }
+            document.getElementById("result").innerHTML = points
+            function desending() {
+                points.sort(function (a, b) { return b - a });
+                document.getElementById("result").innerHTML = points;
+            }
+            </script>
+    </body>
+</html>
