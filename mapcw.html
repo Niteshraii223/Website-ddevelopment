@@ -1,0 +1,15 @@
+<html>
+    <head></head>
+    <body>
+        <p id="result"></p>
+        <p> Dividing num in arrays with 5</p>
+        <script>
+            var numbers = [10, 20, 30, 40];
+            function myfunction(num){
+                return num / 5 ;
+            }
+            var newarray = numbers.map(myfunction);
+            document.getElementById("result").innerHTML= newarray;
+        </script>
+    </body>
+</html>

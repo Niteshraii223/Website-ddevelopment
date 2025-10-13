@@ -1,0 +1,27 @@
+<html>
+    <head></head>
+    <body>
+        <P> Multiple every element with 3</P>
+        <p id="result"></p>
+        <p id="demo"></p>
+        <script>
+            var numbers = [ 4,67, 85, 100];
+            function myfunction(num){
+                return num * 10 ;
+            }
+            var newarray = numbers.map(myfunction);
+            document.getElementById("result").innerHTML = newarray ;
+            </script>
+            <p>Dividing with 5</p>
+            <script>
+            var number = [10, 20, 30, 40];
+                function myfunction1(num) {
+                    return num / 5;
+                }
+                var newarray = number.map(myfunction1);
+                document.getElementById("demo").innerHTML = newarray;
+        </script>
+
+    
+    </body>
+</html>
