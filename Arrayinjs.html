@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1></h1>
+        <p>Click on array</p>
+        <button onclick="ascending()">Ascending</button>
+        <button onclick="desending()">Desending</button>
+        <P id="result"></P>
+        <script>
+            var points= [10,29,28,47,38,100];
+            document.getElementById("result").innerHTML = points;
+            function ascending() {
+                points.sort(function(a,b){return a - b});
+                document.getElementById("result").innerHTML = points;
+
+            }
+            document.getElementById("result").innerHTML = points 
+            function desending() {
+                points.sort(function(a,b){return b - a});
+                document.getElementById("result").innerHTML = points;
+            }
+
+        </script>
+    </body>
+</html>
