@@ -1,0 +1,54 @@
+<html>
+    <head></head>
+    <style>
+        body{
+            color: rgb(29, 47, 41);
+            background-color: rgb(255, 241, 222);
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        
+    </style>
+    <body>
+        <h2>JAVASCRIPT</h2>
+        <p>ADDITION, SUBSTRACTION, MULTIPLICATION AND DIVIDE USING ARROW FUNCTION</p>
+        <button onclick="add()">ADD</button>
+
+        <p id="addition"></p>
+        <P id="SUBSTRACTION"></P>
+        <p id="MULTIPLICATION"></p>
+        <p id="DIVIDE"></p>
+        <p id="demo"></p>
+        <script>
+            function add(){
+            add = (a,b) => a+b;
+            document.getElementById("addition").innerHTML = add(9,19);
+            }
+        </script>
+        <button onclick="sub()">SUB</button><br><br>
+        <script>
+            function sub(){
+            sub = (a,b) => a-b;
+            document.getElementById("SUBSTRACTION").innerHTML = sub(15,5);
+            }
+        </script>
+        <button onclick="mul()">MUL</button><br><br>
+        <script>
+            function mul(){
+            mul = (aa,bb) => aa*bb;
+            document.getElementById("MULTIPLICATION").innerHTML= mul(3,100);
+            }
+
+        </script>
+        <button onclick="div()">DIV</button>
+        <script>
+            function div() {
+            div = (a,b) => a/b;
+            document.getElementById("DIVIDE").innerHTML = div(12,3);
+            }
+        </script>
+        
+
+    </body>
+</html>
