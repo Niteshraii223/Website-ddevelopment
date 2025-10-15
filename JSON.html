@@ -1,0 +1,38 @@
+<html>
+    <head></head>
+    <style>
+        body{
+            background-color: rgb(174, 151, 122);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+        h2{
+            color: rgb(20, 23, 26);
+        }
+        p{
+            
+            color: rgb(86, 255, 2);
+        }
+        button{
+            background-color: rgb(255, 24, 24);
+            border: 6px ;
+            margin: 6px;
+        }
+        
+
+    </style>
+    <body>
+        
+        <h2>CONVERTING JAVASCRIPT OBJECT INTO JSON</h2>
+        <button onclick="myfunction()">CLICK HERE</button>
+        <p id="result"></p>
+        <script>
+            function myfunction(){
+            var myObj = { name: "Nitesh", class : 9, Years : 16};
+            var myJSON = JSON.stringify(myObj); 
+            var newObj = JSON.parse(myJSON);
+            document.getElementById("result").innerHTML = newObj.name + newObj.Years;
+            }
+        </script>
+    </body>
+</html>
