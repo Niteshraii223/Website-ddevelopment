@@ -1,0 +1,33 @@
+<html>
+    <head></head>
+    <style>
+        body{
+            background-color: rgb(134, 119, 172);
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            
+        }
+        h2{
+            color: antiquewhite;
+            text-align: center;
+        }
+        
+    </style>
+    <body>
+        <H2> async and await</H2>
+       
+        <h id="result"></h>
+        <script>
+           
+            async function add(a,b) {
+                let response = await a + b;
+                display(response);
+                
+            }
+            function display(some){
+                document.getElementById("result").innerHTML = some;
+            }
+            add(4,67);
+        
+        </script>
+    </body>
+</html>
