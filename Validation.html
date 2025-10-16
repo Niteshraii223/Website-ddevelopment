@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script>
+            function validationform() {
+                var x = document.forms["myform"]["fname"].value;
+                if (x = "") {
+                    alert("Name must be filled out");
+                    return false;
+                }
+            }
+        </script>
+        <script>
+            function validationform1() {
+                var y = document.forms["myForm"][fpassword].value;
+                if (y="") {
+                    alert("Password must be filled out");
+                    return false;
+                }
+            }
+        </script>
+        <body>
+            <form name="myform" onsubmit="validationform()">
+                Name: <input type="text" name="fname">
+                Password: <input type="text" name="fpassword">
+                <input type="" value="">
+                <P id="message"></P>
+                
+                </form>
+        </body>
+    </head>
+</html>
