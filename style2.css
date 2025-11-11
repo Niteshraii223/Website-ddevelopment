@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(227, 13, 13);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#container{
+    height: 1000px;
+        width: 500px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+        margin: 20px auto
+}
+#bank{
+    height: 520px;
+        width: 500px;
+        background-color: rgb(228, 242, 242);
+       
+        top: 0;
+        border-radius: 6ox;
+        position: relative;
+        box-shadow: tomato;
+}
+#keyboard {
+    height: 400px;
+}
+h1{
+    color: rgb(25, 139, 34);
+}
+h{
+    color: aliceblue;
+}
+
+
+.a,
+.b,
+.empty {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.a,
+.empty {
+    background-color: rgb(49, 191, 78);
+}
+
+.a,
+.b {
+    cursor: pointer;
+}
+
+.a:active,
+.b:active {
+    font-size: 13px;
+}
+
+.a:focus,
+.b:focus,
+.empty:focus {
+    border: 0;
+}
