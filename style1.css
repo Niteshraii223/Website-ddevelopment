@@ -1,25 +1,34 @@
 body{
-    background-color: rgb(42, 48, 46);
+    background-color: rgb(135, 139, 138);
     font-family: 'Times New Roman', Times, serif;
 }
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(249, 249, 249);
+
+
+}
+
 #container{
     height: 1000px;
     width: 500px;
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) );
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(52, 41, 41, 0.3) );
     margin: 20px auto;
 }
 #calculator{
     height: 520px;
     width: 500px;
-    background-color: rgb(62, 71, 71);
+    background-color: rgb(68, 84, 84);
     margin: 3px ;
     top: 0 ;
     border-radius: 6ox;
     position: relative;
-    box-shadow: tomato;
+    box-shadow: rgb(109, 107, 67);
 }
 #keyboard{
     height: 400px;
+    color: rgb(95, 85, 71);
 }
 .operator, .number, .empty{
     width: 50px;
@@ -33,6 +42,7 @@ body{
 }
 .number, .empty{
     background-color: rgb(104, 104, 95);
+    background-color: hwb(105 4% 7%);
 }
 .number, .operator{
     cursor: pointer;
